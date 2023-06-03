@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    watch: true,
     mode: 'development',
     entry: './src/index.js',
     output: {
@@ -10,7 +9,7 @@ module.exports = {
     },
     devtool: 'source-map',
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
+        static: path.resolve(__dirname, 'dist'),
         open: true
     }
 }
