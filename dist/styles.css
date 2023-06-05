@@ -36,6 +36,14 @@ html, body {
     width: 100%;
 }
 
+#reset-map{
+    position: absolute;
+    z-index: 10;
+    width: 150px;
+    left: calc(50% + 75px);
+    top: 100px;
+}
+
 #dreams-container {
     padding: 15px;
     overflow-y: auto;
@@ -44,7 +52,7 @@ html, body {
 }
 
 .dream-container{
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .titre-dream{
@@ -52,16 +60,33 @@ html, body {
     font-weight: bold;
 }
 
+.btn-done{
+    width: 100%;
+    font-weight: bold;
+}
+
 .img-dream{
     width: 100%;
-    margin-bottom: 15px;
     height: 160px;
     object-fit: cover;
+    border-radius: 0;
+}
+
+.card-footer{
+    text-align: right;
 }
 
 
 @media screen and (max-width: 769px) {
     .container-fluid {
       flex-direction: column;
+    }
+    .img-dream{
+        height: 250px;
+    }
+
+    #map-container{
+        width: 98%;
+        margin: 10px auto;
     }
   }

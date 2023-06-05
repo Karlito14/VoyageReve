@@ -5,7 +5,7 @@ const data = [
         image: '../img/img_pyramides.jpg',
         infos: 'https://www.pyramid-of-giza.com/fr/visite-pyramide-gizeh/',
         done: false,
-        coordinates : {lat: 29.980493, long: 31.132496}
+        coordinates : {lat: 29.97965061264061 , long: 31.134175978759398}
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const data = [
         image: '../img/img_mekka.jpg',
         infos: 'https://www.lepelerinage.com/hajj-hajj.html',
         done: false,
-        coordinates : {lat: 21.433378181363306, long: 39.825929541712654},  
+        coordinates : {lat: 21.42275248033119, long: 39.826202037653324},
     }
 ]
 

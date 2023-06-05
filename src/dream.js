@@ -14,7 +14,17 @@ const displayDreams = (dream) => {
     imgDream.setAttribute('alt', dream.titre);
 
     const infoDream = templateDream.querySelector('.info-dream');
-    infoDream.setAttribute('href', dream.infos)
+    infoDream.setAttribute('href', dream.infos);
+
+    const btnDone = templateDream.querySelector('.btn-done');
+
+    if(dream.done) {
+        btnDone.classList.add('btn-secondary');
+        btnDone.textContent = "Je veux le refaire !"
+    } else {
+        btnDone.classList.add('btn-danger');
+        btnDone.textContent = "Je me lance !"
+    }
 
     asideDreams.appendChild(templateDream);
 };

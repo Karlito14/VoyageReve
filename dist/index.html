@@ -23,17 +23,22 @@
             <aside id="dreams-container" class="col-md-3"></aside>
             <div id="map-container" class="cold-md-8">
                 <div id="map"></div>
+                <button type="button" id="reset-map" class="btn btn-secondary btn-sm">Réinitialiser la carte</button>
             </div>
     </div>
     
     <template id="template-item">
-        <div class="dream-container">
-            <h1 class="titre-dream"></h1>
-            <img class="img-dream">
-            <button type="button" class="btn btn-primary">Done</button>
-            <a class="btn btn-primary info-dream" target="_blank">Infos</a>
+        <div class="card text-center dream-container">
+            <h2 class="card-header titre-dream">Featured</h2>
+            <img class="card-img-top img-dream">
+            <div class="card-body">
+                <button type="button" class="btn btn-done"></button>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <button type="button" class="btn btn-outline-secondary btn-sm">Visiter</button>
+                <a class="btn btn-outline-dark info-dream btn-sm" target="_blank">Plus d'infos</a>
+            </div>
         </div>
-        
     </template>
 
 
