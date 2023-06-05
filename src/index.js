@@ -9,4 +9,5 @@ const init = () => {
     }
 };
 
+export{init};
 window.init = init;

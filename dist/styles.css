@@ -5,7 +5,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 } 
 
-#map {
+#map, #panorama {
     height: 100%;
     width: 100%;
 }
